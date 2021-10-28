@@ -1,18 +1,21 @@
+import { useState } from "react";
 import { RootWrapper } from "./components/common";
 import { Editor } from "./components/editor";
 import { PreviewArea } from "./components/preview";
 
 function App() {
+  const [markdownText, setMarkdownText] = useState(
+    "# Marked in Node.js\nRendered by **marked**."
+  );
   return (
     <RootWrapper>
       <Editor
         name=""
-        defaultValue={"# MME - my markdown editor -"}
+        defaultValue={markdownText}
+        onChange={(event) => setMarkdownText(event.target.value)}
         autoFocus={true}
       ></Editor>
-      <PreviewArea
-        markdownText={"# Marked in Node.js\nRendered by **marked**."}
-      />
+      <PreviewArea markdownText={markdownText} />
     </RootWrapper>
   );
 }
