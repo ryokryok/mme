@@ -1,11 +1,13 @@
 {
   "name": "mme",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint"
   },
   "prettier": {
     "trailingComma": "none",
@@ -20,7 +22,12 @@
   "devDependencies": {
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
     "@vitejs/plugin-react": "^1.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.26.1",
     "husky": ">=6",
     "lint-staged": ">=10",
     "prettier": "^2.4.1",
@@ -28,6 +35,7 @@
     "vite": "^2.6.4"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,css,html,md}": "prettier --write"
+    "*.{js,jsx,ts,tsx,css,html,md}": "prettier --write",
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
   }
 }
