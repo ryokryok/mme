@@ -16,13 +16,17 @@
     "singleQuote": false
   },
   "dependencies": {
+    "marked": "^3.0.8",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "sanitize-html": "^2.5.2",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@types/marked": "^3.0.2",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/sanitize-html": "^2.5.0",
     "@types/styled-components": "^5.1.15",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",

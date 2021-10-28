@@ -10,7 +10,9 @@ function App() {
         defaultValue={'# MME - my markdown editor -'}
         autoFocus={true}
       ></Editor>
-      <PreviewArea>Rendered text</PreviewArea>
+      <PreviewArea
+        markdownText={'# Marked in Node.js\nRendered by **marked**.'}
+      />
     </RootWrapper>
   );
 }
