@@ -6,9 +6,10 @@ export const Preview = styled.pre`
   padding: 1em;
   max-width: 100%;
   height: auto;
+  flex: 1;
   background-color: #ffffff;
   color: #222222;
-  font-size: 1.5em;
+  font-size: 1.25em;
 `;
 
 type PreviewAreaProps = {
