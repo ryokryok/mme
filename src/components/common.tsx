@@ -11,5 +11,3 @@ export const RootWrapper = styled.main`
     flex-direction: column;
   }
 `;
-
-export const ColumnWrapper = styled.div``;
