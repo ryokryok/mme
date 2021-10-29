@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Editor = styled.textarea`
   padding: 1em;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   resize: none;
   background-color: #222222;
