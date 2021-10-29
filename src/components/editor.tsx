@@ -1,13 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Editor = styled.textarea`
   padding: 1em;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  flex: 1;
   resize: none;
   background-color: #222222;
   color: #ffffff;
   border: none;
   outline: none;
-  font-size: 1.5em;
+  font-size: 1.25em;
 `;

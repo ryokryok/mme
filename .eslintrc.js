@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ["plugin:react/recommended", "google", "prettier"],
+  extends: [
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "google",
+    "prettier"
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
@@ -14,7 +19,6 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint"],
   rules: {
-    "react/react-in-jsx-scope": "off",
     "require-jsdoc": "off",
     "object-curly-spacing": ["error", "always"],
     quotes: ["error", "double"]

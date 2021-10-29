@@ -2,11 +2,10 @@ import { useState } from "react";
 import { RootWrapper } from "./components/common";
 import { Editor } from "./components/editor";
 import { PreviewArea } from "./components/preview";
+import initialText from "./SAMPLE.md?raw";
 
 function App() {
-  const [markdownText, setMarkdownText] = useState(
-    "# Marked in Node.js\nRendered by **marked**."
-  );
+  const [markdownText, setMarkdownText] = useState(initialText);
   return (
     <RootWrapper>
       <Editor

@@ -1,22 +1,34 @@
-import styled from 'styled-components';
-import sanitizeHtml from 'sanitize-html';
-import marked from 'marked';
+import styled from "styled-components";
+import { markdownToHtml } from "../lib/parser";
+import "highlight.js/styles/github-dark.css";
+import { useEffect } from "react";
+import { hljs } from "../lib/hljs";
+import "github-markdown-css";
 
-export const Preview = styled.pre`
+export const Preview = styled.div`
   padding: 1em;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  background-color: #ffffff;
-  color: #222222;
-  font-size: 1.5em;
+  flex: 1;
+  overflow: scroll;
+  @media screen and (max-width: 40em) {
+    flex: 2;
+  }
 `;
 
 type PreviewAreaProps = {
   markdownText: string;
 };
 
-export function PreviewArea({markdownText}: PreviewAreaProps) {
-  const sanitizedText = sanitizeHtml(markdownText);
-  const htmlText = marked(sanitizedText);
-  return <Preview dangerouslySetInnerHTML={{__html: htmlText}} />;
+export function PreviewArea({ markdownText }: PreviewAreaProps) {
+  const htmlText = markdownToHtml(markdownText);
+  useEffect(() => {
+    hljs.initHighlighting();
+  }, [markdownText]);
+  return (
+    <Preview
+      className={"markdown-body"}
+      dangerouslySetInnerHTML={{ __html: htmlText }}
+    />
+  );
 }

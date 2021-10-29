@@ -1,3 +1,26 @@
+# MME
+
+## MME?
+
+This is short for **my markdown editor.**
+
+## support syntax highlight lang
+
+- HTML
+- XML
+- CSS
+- JavaScript
+- TypeScript
+
+## highlight demo
+
+```ts
+function say(name: string) {
+  console.log(`Hi, ${name}`);
+}
+```
+
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,3 +35,4 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+```
