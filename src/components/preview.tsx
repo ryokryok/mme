@@ -11,8 +11,11 @@ export const Preview = styled.div`
   flex: 1;
   background-color: #ffffff;
   color: #222222;
-  font-size: 1.25em;
+  font-size: 1em;
   overflow: scroll;
+  & > h1 {
+    border-bottom: 4px solid #cccccc;
+  }
 `;
 
 type PreviewAreaProps = {
