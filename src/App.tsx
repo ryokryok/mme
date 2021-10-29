@@ -5,7 +5,7 @@ import { PreviewArea } from "./components/preview";
 
 function App() {
   const [markdownText, setMarkdownText] = useState(
-    "# Marked in Node.js\nRendered by **marked**."
+    "# Marked in Node.js\n\nRendered by **marked**."
   );
   return (
     <RootWrapper>
