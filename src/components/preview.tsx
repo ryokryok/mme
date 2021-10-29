@@ -2,7 +2,7 @@ import styled from "styled-components";
 import sanitizeHtml from "sanitize-html";
 import marked from "marked";
 
-export const Preview = styled.pre`
+export const Preview = styled.div`
   padding: 1em;
   max-width: 100%;
   height: auto;
