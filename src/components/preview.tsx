@@ -23,7 +23,7 @@ type PreviewAreaProps = {
 export function PreviewArea({ markdownText }: PreviewAreaProps) {
   const htmlText = markdownToHtml(markdownText);
   useEffect(() => {
-    hljs.initHighlighting();
+    hljs.highlightAll();
   }, [markdownText]);
   return (
     <Preview
