@@ -10,7 +10,7 @@ export default defineConfig({
     vPWA({
       includeAssets: ["/favicon.ico", "/robots.txt", "/apple-touch-icon.png"],
       manifest: {
-        name: "My markdown editor",
+        name: "my markdown editor",
         short_name: "MME",
         description: "web base markdown editor",
         theme_color: "#222222",
