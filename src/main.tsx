@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import { registerSW } from "virtual:pwa-register";
+
 import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 body {
@@ -17,3 +19,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+registerSW();
