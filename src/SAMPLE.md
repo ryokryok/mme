@@ -4,6 +4,10 @@
 
 This is short for **my markdown editor.**
 
+This tool use Service Worker API for offline experiences, so **you can install this app on home(or desktop).**
+
+you want to know about _Add to Home screen_, [check MDN doc.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Add_to_home_screen)
+
 ## support syntax highlight lang
 
 - HTML
@@ -20,19 +24,18 @@ function say(name: string) {
 }
 ```
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MME</title>
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+```css
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 ```
+
+```html
+<div id="root"></div>
+```
+
+## Repository
+
+[ryokryok / mme](https://github.com/ryokryok/mme)
