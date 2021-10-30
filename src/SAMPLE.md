@@ -4,6 +4,10 @@
 
 This is short for **my markdown editor.**
 
+This tool use Service Worker API for offline experiences, so **you can install this app on home(or desktop).**
+
+you want to know about _Add to Home screen_, [check MDN doc.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Add_to_home_screen)
+
 ## support syntax highlight lang
 
 - HTML
